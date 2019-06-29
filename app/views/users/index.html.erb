@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="mb-3">Categories</h1>
+
+<table class="table">
+  <thead class="thead-light">
+    <tr class="text-center">
+      <th scope="col">Name</th>
+      <th scope="col">Cantidad</th>
+      <th scope="col">Editar</th>
+      <th scope="col">Destruir</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr class="text-center">
+        <td><%= user.stories.last.content%></td>
+      </tr>
+    <% end %>
+
+
+  </tbody>
+</table>
+
+<br>
+
